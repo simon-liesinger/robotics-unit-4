@@ -137,7 +137,6 @@ void setup() {
     // close the file:
     SDOutput.close();
     Serial.println("done.");
-    dance = "FFLLBBRR";
     dance.toCharArray(moves, dance.length());
   } else {
     Serial.println("error opening dance.txt");
@@ -145,9 +144,9 @@ void setup() {
   }
   danceStart = millis();
 
-  dance = "FFLLBBRR";
-  dance.toCharArray(moves, dance.length());
-  dancing = true;
+  // dance = "FFLLBBRR";
+  // dance.toCharArray(moves, dance.length());
+  // dancing = true;
 }
 
 void loop() {
